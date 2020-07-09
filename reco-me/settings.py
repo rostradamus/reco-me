@@ -11,10 +11,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from dotenv import load_dotenv
-from pathlib import Path  # Python 3.6+ only
-env_path = Path('..') / '.env'
-load_dotenv(dotenv_path=env_path)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,7 +25,6 @@ SECRET_KEY = 'l^yb3qh83yhm*+u&bz+^_8s+mqwq2iv+olwv)tmnr%g9#!k5xe'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
